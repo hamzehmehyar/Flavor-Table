@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serch Recipes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+
+        <div class="nav-container">
+
+            <a href="/flavortable">Flavor Table</a>
+            <a href="/favorites">Favorites</a>
+            <a href="/generaterandomrecipe">Random Recipes</a>
+            <a href="/search">Search by Ingredients</a>
+
+        </div>
+
+
+    </nav>
+
+
+    <h1 class="search-heading">Search Recipes by Ingredients</h1>
+
+    <form id="search-form">
+
+        <input type="text" id="ingredients" placeholder="e.g. chicken,rice,tomato" required/>
+        <button id="search-button" type="submit">Search</button>
+
+    </form>
+
+    <div id="results"></div>
+
+    <script src="app.js" ></script>
+    
+</body>
+</html>
