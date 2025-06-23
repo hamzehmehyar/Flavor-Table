@@ -1,1 +1,22 @@
 # Flavor-Table
+
+- this website is representing 4 pages which are the flacor table that represents the flavors ,
+
+and a favorites page where you can add and remove your favorites recipes , and a random recipe page where you can 
+
+generate a random recipe by clicking , and a search page where you can search for a specific recipes and 
+
+add them to the favorites page
+
+
+this website is working on 4567 port , and if you want you can navigate between pages through a navigation
+
+bar , there is also several routes for pages where you can enter them to easily access this pages 
+
+- http://localhost:4567/flavortable 
+
+- http://localhost:4567/generaterandomrecipe
+
+- http://localhost:4567/search
+
+- http://localhost:4567/favorites
