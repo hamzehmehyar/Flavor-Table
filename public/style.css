@@ -262,10 +262,13 @@ td img {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     background-color: #11366d;
     transition: 0.3s;
-    border-radius: 23px 23px 20px 20px;
-    height: 346px;
-
-
+    border-radius: 20px;
+    padding: 15px;
+    height: auto;
+    width: 318px;
+    height: 442px;
+    flex-wrap: wrap;
+    
 }
 
 .recipe-card:hover {
@@ -326,6 +329,7 @@ td img {
 
     border-radius: 14px;
     padding: 5px;
+    cursor: pointer;
 
 }
 
@@ -346,5 +350,28 @@ td img {
     text-align: center;
     padding: 20px;
     font-size: 24px;
+
+}
+
+
+.container {
+
+    text-align: center;
+    gap: 0px;
+}
+
+.no-favorites-yet {
+
+    padding: 20px;
+
+}
+
+#favorites-container {
+
+    flex-wrap: wrap;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
 
 }

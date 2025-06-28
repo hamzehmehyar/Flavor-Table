@@ -154,22 +154,27 @@ document.getElementById("random-recipe-btn").addEventListener("click" , async ()
 
 function saveToFavorites(recipe){
 
-    const favorites = JSON.parse(localStorage.getItem('favorites')) || [];
+    axios.post("/reciperouts/api/recipes" , {
 
-    const alreadyExists = favorites.some(r => r.title === recipe.title);
+        title: recipe.title,
+        image: recipe.image,
+        instructions: recipe.instructions || '',
+        ingredients: recipe.ingredients || recipe.usedIngredients || [],
+        readyIn: recipe.readyInMinutes || 0
 
-    if(!alreadyExists){
+    })
+    .then(() => {
 
-        favorites.push(recipe);
-        localStorage.setItem('favorites' , JSON.stringify(favorites));
+        alert("recipe saved to favorites (to the database)");
 
-        alert("Recipe saved to favorites");
+    })
+    .catch(err => {
 
-    } else {
+        console.log("we have a problem saving the data to the database" , err);
+        alert("failed to save recipe");
+        
 
-        alert("Recipe already saved");
-
-    }
+    });
 
 }
 
