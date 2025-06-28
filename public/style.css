@@ -4,6 +4,8 @@
     padding: 0;
     box-sizing: border-box;
 
+     font-family: "Titillium Web", sans-serif;
+
 }
 
 body {
@@ -268,6 +270,9 @@ td img {
     width: 318px;
     height: 442px;
     flex-wrap: wrap;
+    justify-items: center;
+    padding: 0px;
+    margin: 1px;
     
 }
 
@@ -279,9 +284,11 @@ td img {
 
 .searchImage {
 
-    width: 250px;
-    height: 250px;
+    width: 173px;
+    height: 163px;
     border-radius: 20px 20px 20px 20px;
+    margin-top: 28px;
+    margin-bottom: -27px;
 
 }
 
@@ -341,7 +348,26 @@ td img {
 
 .save-button {
 
-    align-items: center;
+    background: linear-gradient(135deg, #57c785, #2a7b9b);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-weight: 600;
+    font-size: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0 , 0 , 0 , 0.15);
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    margin-top: 58px;
+    cursor: pointer;
+
+}
+
+.save-button:hover {
+
+    background: linear-gradient(135deg, #eddc53, #57c785);
+    transform: scale(1.05);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.25);
 
 }
 
@@ -373,5 +399,19 @@ td img {
     gap: 10px;
     align-items: center;
     justify-content: center;
+
+}
+
+.used-missed-ingredients {
+
+    margin-top: 35px;
+    margin-bottom: -35px;
+
+}
+
+.recipe-title {
+
+    margin-top: 9px;
+    margin-bottom: -12px;
 
 }
