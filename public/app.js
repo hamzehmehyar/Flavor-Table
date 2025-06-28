@@ -56,10 +56,15 @@ document.addEventListener("DOMContentLoaded" , () => {
 
                     recipeEl.innerHTML = `
                     <div class = "search-card-content">
-                        <h3>${recipe.title}</h3>
+                        <h3 class = "recipe-title">${recipe.title}</h3>
                         <img class = "searchImage" src = "${recipe.image}" alt = "${recipe.title}"/>
+
+                    <div class = "used-missed-ingredients">
+
                         <p><strong>Used Ingredients : </strong> ${recipe.usedIngredients.join(', ')}</p>
                         <p><strong>Missed Ingredients : </strong> ${recipe.missedIngredients.join(', ')}</p>
+
+                    </div>    
 
                     </div>
                     `;
