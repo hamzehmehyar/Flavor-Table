@@ -22,15 +22,15 @@ const apiKey = process.env.API_KEY;
 
 const PORT = process.env.PORT || 3000;
 
-app.use(express.static('public'));  
 
 
-//this is the first route to the flavortable page
-app.get('/flavortable', (req, res) => {
+//
+const home = require("./routes/home");
 
-  res.sendFile(path.join(__dirname, 'public', 'flavortable.html'));
+app.use("/", home); 
 
-});
+app.use(express.static('public')); 
+
 
 //the route for search by ingredients
 app.get('/search', (req, res) => {
@@ -54,7 +54,7 @@ app.get('/favorites', (req, res) => {
 
 //this is the second route to the recipe page
 const recipesRoutes = require('./routes/recipes');
-app.use('/reciperouts', recipesRoutes);
+app.use('/reciperouts', recipesRoutes); 
 
 
 //listening to the port with connecting it with the database server

@@ -13,7 +13,9 @@ this website is working on 4567 port , and if you want you can navigate between 
 
 bar , there is also several routes for pages where you can enter them to easily access this pages 
 
-- http://localhost:4567/flavortable 
+- this will be the default page as the home page which contains the flavor table 
+
+         http://localhost:4567/              
 
 - http://localhost:4567/generaterandomrecipe
 
