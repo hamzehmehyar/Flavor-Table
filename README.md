@@ -22,3 +22,17 @@ bar , there is also several routes for pages where you can enter them to easily 
 - http://localhost:4567/search
 
 - http://localhost:4567/favorites
+
+note: to start the database you have to make the following steps 
+
+sqlstart
+
+- then type
+
+psql flavor_table
+
+- then type 
+
+SELECT * FROM recipes
+
+to see the database saving the recipes when you click save
