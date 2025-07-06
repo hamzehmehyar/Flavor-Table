@@ -1,5 +1,14 @@
 # Flavor-Table
 
+- deployment 
+
+https://flavor-table-1.onrender.com/
+
+try this iser to login
+
+username : meho
+password : 123456
+
 - this website is representing 4 pages which are the flacor table that represents the flavors ,
 
 and a favorites page where you can add and remove your favorites recipes , and a random recipe page where you can 
