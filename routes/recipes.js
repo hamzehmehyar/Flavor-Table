@@ -14,6 +14,8 @@ const pool = new pg.Pool({ connectionString: process.env.DATABASE_URL });
 
 //-----------------------------------
 
+const routeGuard = require("../middleware/verifyToken");
+
 
 const apiKey = process.env.API_KEY;
 
@@ -116,9 +118,9 @@ router.get('/search-by-ingredients' , async (req , res) => {
 
 });
 
-//db
+//db                          //
 
-router.get("/api/recipes/all", async (req, res) => {
+router.get("/api/recipes/all" , async (req, res) => {
 
   try {
 
