@@ -30,6 +30,13 @@ const home = require("./routes/home");
 app.use("/", home); 
 
 app.use(express.static('public')); 
+ 
+//
+app.get('/flavortable', (req, res) => {
+
+  res.sendFile(path.join(__dirname, 'public', 'flavortable.html'));
+
+});
 
 
 //the route for search by ingredients
@@ -55,6 +62,9 @@ app.get('/favorites', (req, res) => {
 //this is the second route to the recipe page
 const recipesRoutes = require('./routes/recipes');
 app.use('/reciperouts', recipesRoutes); 
+
+const auth = require("./routes/auth");
+app.use("/user" , auth);
 
 
 //listening to the port with connecting it with the database server

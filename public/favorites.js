@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded" , () => {
 
         const recipeEl = document.createElement("div");
 
-        recipeEl.classList.add("recipe-card");
+        recipeEl.classList.add("recipe-card-favorite");
 
         let ingredientsText = "";
 
@@ -54,11 +54,15 @@ document.addEventListener("DOMContentLoaded" , () => {
 
           recipeEl.innerHTML = `
 
-          <h3>${recipe.title}</h3>
-          <img src="${recipe.image}" alt="${recipe.title}" width="200" />
+          <h3 class = "favorite-title">${recipe.title}</h3>
+          <img class = "favorite-image" src="${recipe.image}" alt="${recipe.title}"/>
+          
+          <div class = "favorite-ingredients-instructions">
+
           <p><strong>Ingredients : </strong>${ingredientsText}</p>
           <p><strong>Instructions : </strong>${recipe.instructions || "No instructions provided"}</p>
-
+          
+          </div>
         `;
 
         const removeBtn = document.createElement("Button")
