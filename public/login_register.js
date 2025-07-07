@@ -3,12 +3,17 @@ const registerForm = document.getElementById("registerForm");
 
 const loginForm = document.getElementById("loginForm");
 
-const usernameInput = document.getElementById("username");
 
-const emailInput = document.getElementById("email");
+//register inputs
+const usernameInput = document.getElementById("usernameRegister");
 
-const passwordInput = document.getElementById("password");
+const emailInput = document.getElementById("emailRegister");
 
+const passwordInput = document.getElementById("passwordRegister");
+
+//login inputs
+const usernameLogin = document.getElementById("username");
+const passwordLogin = document.getElementById("password");
 
 if(registerForm){
 
@@ -55,8 +60,8 @@ if(loginForm){
             
             const res = await axios.post('/user/login' , {
 
-                username: usernameInput.value,
-                password: passwordInput.value
+                username: usernameLogin.value,
+                password: passwordLogin.value
 
             });
 
