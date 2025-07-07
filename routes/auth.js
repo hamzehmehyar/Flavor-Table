@@ -34,6 +34,13 @@ router.post('/register', async (req, res) => {
     
   const { username , email , password} = req.body;
 
+
+    if (!username || !email || !password) {
+
+    return res.status(400).send("Username, email, and password are required");
+    
+  }
+
   try {
 
     //hashing the password
@@ -57,11 +64,14 @@ router.post('/register', async (req, res) => {
 
          res.status(409).send("username already exists");
 
+    } else if(error.detail.includes("email")){
+
+    res.status(500).send("error" + error.message );
+
     }
 
-    res.status(500).send("error" , error.message );
-
   }
+
 });
 
 //login

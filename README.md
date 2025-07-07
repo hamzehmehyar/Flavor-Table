@@ -4,12 +4,9 @@
 
 https://flavor-table-1.onrender.com/
 
-try this iser to login
+- you can now register and login to see the full website
 
-username : meho
-password : 123456
-
-- this website is representing 4 pages which are the flacor table that represents the flavors ,
+- this website is representing 4 pages which are the flavor table that represents the flavors ,
 
 and a favorites page where you can add and remove your favorites recipes , and a random recipe page where you can 
 
